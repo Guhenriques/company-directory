@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  overflow: auto;
+}
+
+main {
+  margin-top: 58px;
+}
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+#search-input {
+  max-width: 550px;
+  min-width: 200px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 400px;
+    height: auto;
+    bottom: auto;
+  }
+
+  .emp-details {
+    margin-top: 20px;
+  }
+}
+
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* My css */
+
+.table-responsive {
+  max-width: 600px;
+  max-height: 90vh;
+}
+
+td {
+  cursor: pointer;
+}
+
+.loc-card-hover:hover {
+  background-color: #1B6B93 !important;
+  cursor: pointer;
+  color: #e2e2e2;
+}
+
+label.error {
+  color: #f56957;
+  font-size: 12px;
+}
+
+.bg-warning-light {
+  background-color: #ffc107a9;
+}
+
+.bg-secondary-light {
+  background-color: #a8b2bb;
+}
+
+.bg-info-light {
+  background-color: #91b7bd;
+}
+
+/* Preloader page styles */
+#preloader3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner animation styles (adjust as needed) */
+.spinner-border-page {
+  width: 4rem;
+  height: 4rem;
+  border: 0.3em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 1s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
