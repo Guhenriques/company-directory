@@ -17,9 +17,11 @@ main {
   }
 }
 
-#search-input {
-  max-width: 550px;
-  min-width: 200px;
+/* Navbar */
+
+.img-logo img {
+  width: 300px;
+  height: auto;
 }
 
 /* Sidebar */
@@ -63,7 +65,7 @@ main {
   /* Scrollable contents if viewport is shorter than content. */
 }
 
-/* My css */
+/* Other styles */
 
 .table-responsive {
   max-width: 600px;
@@ -72,12 +74,6 @@ main {
 
 td {
   cursor: pointer;
-}
-
-.loc-card-hover:hover {
-  background-color: #1B6B93 !important;
-  cursor: pointer;
-  color: #e2e2e2;
 }
 
 label.error {
@@ -95,6 +91,10 @@ label.error {
 
 .bg-info-light {
   background-color: #91b7bd;
+}
+
+.text-danger {
+  color: #ce0303e1 !important;
 }
 
 /* Preloader page styles */
@@ -129,4 +129,9 @@ label.error {
 
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
+}
+
+#search-input {
+  max-width: 550px;
+  min-width: 200px;
 }
